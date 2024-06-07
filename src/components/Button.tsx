@@ -31,6 +31,10 @@ const Container = styled.button<IStyledButtonProps>`
     height: 42px;
     padding: ${({ label }) => (label ? "6px 12px 8px" : "8px")};
     border-radius: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.2px;
 
     ${({ color }) => {
         switch (color) {
