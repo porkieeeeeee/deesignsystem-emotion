@@ -33,7 +33,7 @@ const Container = styled.button<IStyledButtonProps>`
     border-radius: 7px;
     font-size: 18px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 32px;
     letter-spacing: -0.2px;
 
     ${({ color }) => {
