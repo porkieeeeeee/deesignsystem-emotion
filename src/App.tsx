@@ -7,28 +7,64 @@ import arrowWhite from "assets/imgs/arrow-white.svg";
 import styled from "@emotion/styled";
 
 function App() {
+    const handleButtonClick = () => {
+        alert("click~~~~~🥳");
+    };
     return (
         <div className='App'>
             <Wrapper>
-                <Button color={EButtonColorType.GRAY} icon={edit} label='Asset 등록하기' />
-                <Button color={EButtonColorType.WHITE} icon={addBlack} label='Asset 등록하기' />
-                <Button color={EButtonColorType.PRIMARY} icon={addWhite} label='Asset 등록하기' />
-                <Button color={EButtonColorType.GRAY} label='Asset 등록하기' />
-                <Button color={EButtonColorType.WHITE} label='Asset 등록하기' />
-                <Button color={EButtonColorType.PRIMARY} label='Asset 등록하기' />
-                <Button color={EButtonColorType.WHITE} icon={arrowBlack} />
-                <Button color={EButtonColorType.GRAY} icon={arrowWhite} />
+                <Button color={EButtonColorType.GRAY} icon={edit} label='Asset 등록하기' onClick={handleButtonClick} />
+                <Button
+                    color={EButtonColorType.WHITE}
+                    icon={addBlack}
+                    label='Asset 등록하기'
+                    onClick={handleButtonClick}
+                />
+                <Button
+                    color={EButtonColorType.PRIMARY}
+                    icon={addWhite}
+                    label='Asset 등록하기'
+                    onClick={handleButtonClick}
+                />
+                <Button color={EButtonColorType.GRAY} label='Asset 등록하기' onClick={handleButtonClick} />
+                <Button color={EButtonColorType.WHITE} label='Asset 등록하기' onClick={handleButtonClick} />
+                <Button color={EButtonColorType.PRIMARY} label='Asset 등록하기' onClick={handleButtonClick} />
+                <Button color={EButtonColorType.WHITE} icon={arrowBlack} onClick={handleButtonClick} />
+                <Button color={EButtonColorType.GRAY} icon={arrowWhite} onClick={handleButtonClick} />
             </Wrapper>
             <br />
             <Wrapper>
-                <Button color={EButtonColorType.GRAY} icon={edit} label='Asset 등록하기' isDisabled />
-                <Button color={EButtonColorType.WHITE} icon={addBlack} label='Asset 등록하기' isDisabled />
-                <Button color={EButtonColorType.PRIMARY} icon={addWhite} label='Asset 등록하기' isDisabled />
-                <Button color={EButtonColorType.GRAY} label='Asset 등록하기' isDisabled />
-                <Button color={EButtonColorType.WHITE} label='Asset 등록하기' isDisabled />
-                <Button color={EButtonColorType.PRIMARY} label='Asset 등록하기' isDisabled />
-                <Button color={EButtonColorType.WHITE} icon={arrowBlack} isDisabled />
-                <Button color={EButtonColorType.GRAY} icon={arrowWhite} isDisabled />
+                <Button
+                    color={EButtonColorType.GRAY}
+                    icon={edit}
+                    label='Asset 등록하기'
+                    isDisabled
+                    onClick={handleButtonClick}
+                />
+                <Button
+                    color={EButtonColorType.WHITE}
+                    icon={addBlack}
+                    label='Asset 등록하기'
+                    isDisabled
+                    onClick={handleButtonClick}
+                />
+                <Button
+                    color={EButtonColorType.PRIMARY}
+                    icon={addWhite}
+                    label='Asset 등록하기'
+                    isDisabled
+                    onClick={handleButtonClick}
+                />
+                <Button color={EButtonColorType.GRAY} label='Asset 등록하기' isDisabled onClick={handleButtonClick} />
+                <Button color={EButtonColorType.WHITE} label='Asset 등록하기' isDisabled onClick={handleButtonClick} />
+                <Button
+                    color={EButtonColorType.PRIMARY}
+                    label='Asset 등록하기'
+                    isDisabled
+                    onClick={handleButtonClick}
+                />
+                <Button color={EButtonColorType.WHITE} icon={arrowBlack} isDisabled onClick={handleButtonClick} />
+                <Button color={EButtonColorType.GRAY} icon={arrowWhite} isDisabled onClick={handleButtonClick} />
             </Wrapper>
         </div>
     );
